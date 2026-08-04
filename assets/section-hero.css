@@ -77,20 +77,27 @@
 }
 
 /*
- * Gradient is deliberately localized behind the text position (not a
- * full-image scrim) so the product stays at full brightness/contrast.
- * Mobile anchors bottom-center; desktop overrides below anchor upper-left.
+ * Mobile: two separate dark patches (top zone + bottom zone), leaving the
+ * middle of the image, where the product sits, untouched.
+ * Desktop overrides below to a single patch behind the upper-left text.
  */
 .hero__overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: radial-gradient(
-    ellipse 90% 42% at 50% 86%,
-    #111315 0%,
-    rgba(17, 19, 21, 0.68) 48%,
-    rgba(17, 19, 21, 0) 82%
-  );
+  background:
+    radial-gradient(
+      ellipse 90% 24% at 50% 12%,
+      #111315 0%,
+      rgba(17, 19, 21, 0.62) 55%,
+      rgba(17, 19, 21, 0) 85%
+    ),
+    radial-gradient(
+      ellipse 90% 28% at 50% 90%,
+      #111315 0%,
+      rgba(17, 19, 21, 0.62) 55%,
+      rgba(17, 19, 21, 0) 85%
+    );
   pointer-events: none;
 }
 
@@ -101,44 +108,66 @@
 }
 
 /*
- * Centering/right-anchoring is done with left/right + margin-inline
- * (never transform), so it never conflicts with the entrance animation's
- * own transform below.
+ * Mobile: .hero__content spans the full hero height and splits its two
+ * children (top group / bottom group) to opposite ends via space-between,
+ * leaving the product visible in the empty middle.
+ * Desktop: the two groups collapse to display:contents (see below), so
+ * eyebrow/heading/text/ctas behave as one unified block again.
  */
 .hero__content {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 6%;
-  top: auto;
+  inset: 0;
   margin-inline: auto;
-  width: fit-content;
-  max-width: 300px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1.5rem 2.5rem;
+}
+
+.hero__content-top,
+.hero__content-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1.8rem;
-  padding: 0 1.5rem 2rem;
+  width: 100%;
+}
+
+.hero__content-top {
+  gap: 0.8rem;
+}
+
+.hero__content-bottom {
+  gap: 1.4rem;
 }
 
 @media screen and (min-width: 750px) {
   .hero__content {
-    left: 6rem;
-    right: auto;
-    bottom: auto;
-    top: 12%;
+    inset: auto;
+    left: 20%;
+    top: 9%;
     margin-inline: 0;
+    width: auto;
     max-width: 420px;
+    justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    gap: 2.8rem;
+    gap: 3.2rem;
     padding: 0;
+  }
+
+  .hero__content-top,
+  .hero__content-bottom {
+    display: contents;
   }
 
   .hero__overlay {
     background: radial-gradient(
-      ellipse 55% 42% at 16% 16%,
+      ellipse 55% 42% at 24% 14%,
       #111315 0%,
       rgba(17, 19, 21, 0.65) 45%,
       rgba(17, 19, 21, 0) 75%
@@ -152,13 +181,6 @@
 
 .hero__content-wrapper--position-bottom .hero__content {
   top: 60%;
-}
-
-@media screen and (min-width: 750px) {
-  .hero__content-wrapper--position-top .hero__content,
-  .hero__content-wrapper--position-bottom .hero__content {
-    bottom: auto;
-  }
 }
 
 .hero__content--align-left {
@@ -220,14 +242,14 @@
 }
 
 .hero__heading.hxxl {
-  font-size: clamp(2.36rem, 9vw, 2.7rem);
-  line-height: 1.15;
+  font-size: clamp(2.12rem, 8.1vw, 2.43rem);
+  line-height: 1.2;
 }
 
 @media screen and (min-width: 750px) {
   .hero__heading.hxxl {
     font-size: clamp(4.44rem, 11.1vw, 5.7rem);
-    line-height: 1.1;
+    line-height: 1.18;
   }
 }
 
