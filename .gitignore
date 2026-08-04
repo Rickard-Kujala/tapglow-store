@@ -1,0 +1,14 @@
+# Claude Code local settings (machine/user specific, not shared)
+.claude/settings.local.json
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Shopify CLI
+.shopifyignore
+.shopify/
+
+# OS
+.DS_Store
+Thumbs.db
