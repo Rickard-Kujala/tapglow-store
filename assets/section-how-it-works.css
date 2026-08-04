@@ -1,0 +1,74 @@
+.how-it-works__header {
+  max-width: 46rem;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.how-it-works__eyebrow {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+.how-it-works__heading {
+  margin: 0;
+}
+
+.how-it-works__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.2rem;
+  counter-reset: step;
+}
+
+@media screen and (min-width: 750px) {
+  .how-it-works__grid {
+    grid-template-columns: repeat(var(--how-it-works-columns, 3), 1fr);
+    gap: 4rem;
+  }
+}
+
+.how-it-works__step {
+  position: relative;
+  padding-top: 2.4rem;
+  border-top: 1px solid rgba(24, 20, 15, 0.14);
+}
+
+.color-scheme-1 .how-it-works__step,
+.color-scheme-2 .how-it-works__step,
+.color-scheme-5 .how-it-works__step {
+  border-top-color: rgba(24, 20, 15, 0.14);
+}
+
+.color-scheme-3 .how-it-works__step,
+.color-scheme-4 .how-it-works__step {
+  border-top-color: rgba(247, 243, 236, 0.18);
+}
+
+.how-it-works__step-number {
+  counter-increment: step;
+  display: block;
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+}
+
+.how-it-works__step-number::before {
+  content: counter(step, decimal-leading-zero);
+}
+
+.how-it-works__step-heading {
+  margin: 0 0 1rem;
+}
+
+.how-it-works__step-text {
+  margin: 0;
+  max-width: 34rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}

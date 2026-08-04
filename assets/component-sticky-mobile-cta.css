@@ -1,0 +1,48 @@
+.sticky-mobile-cta {
+  display: none;
+}
+
+@media screen and (max-width: 749px) {
+  body.template-product {
+    padding-bottom: calc(7rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .sticky-mobile-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 1.2rem 1.6rem calc(1.2rem + env(safe-area-inset-bottom, 0px));
+    background: rgb(var(--color-background));
+    border-top: 1px solid rgba(var(--color-foreground), 0.12);
+  }
+
+  .sticky-mobile-cta__info {
+    min-width: 0;
+  }
+
+  .sticky-mobile-cta__title {
+    margin: 0;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.7;
+  }
+
+  .sticky-mobile-cta__price {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .sticky-mobile-cta__button {
+    flex-shrink: 0;
+    min-height: 4.4rem;
+    padding-inline: 2rem;
+  }
+}

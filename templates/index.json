@@ -1,90 +1,60 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Engineered for focus.",
-            "heading_size": "h0"
-          }
-        },
-        "subheading": {
-          "type": "text",
-          "settings": {
-            "text": "A CNC-machined metal click toy for restless hands and busy minds. Carry it. Click it. Think clearer.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop TapGlow",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "subheading",
-        "button"
-      ],
+    "hero": {
+      "type": "hero",
       "settings": {
-        "image_overlay_opacity": 50,
+        "image_overlay_opacity": 35,
         "image_height": "large",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
+        "eyebrow": "TAPGLOW",
+        "heading": "Engineered for focus.",
+        "heading_size": "hxl",
+        "text": "<p>A precision magnetic clicker designed for restless hands and busy minds.</p>",
+        "primary_button_label": "Discover TapGlow",
+        "primary_button_link": "shopify://collections/all",
+        "secondary_button_label": "See how it works",
+        "secondary_button_link": "#shopify-section-how_it_works",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
         "color_scheme": "scheme-4",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
-    "value_props": {
+    "benefit_strip": {
       "type": "multicolumn",
       "blocks": {
-        "column_1": {
+        "b1": {
           "type": "column",
           "settings": {
-            "title": "Machined, not molded",
-            "text": "<p>CNC-milled from aircraft-grade aluminum for a weight and finish plastic can't match.</p>",
+            "title": "Satisfying magnetic feedback",
+            "text": "<p>Precision magnets deliver a sharp, controlled click every time.</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_2": {
+        "b2": {
           "type": "column",
           "settings": {
-            "title": "A click that means something",
-            "text": "<p>Precision magnets deliver a sharp, satisfying click, tuned to hold its feel through hundreds of thousands of repetitions.</p>",
+            "title": "Pocket-sized focus",
+            "text": "<p>Small enough to disappear into a pocket. Present enough to matter.</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_3": {
+        "b3": {
           "type": "column",
           "settings": {
-            "title": "Quiet focus, on demand",
-            "text": "<p>A small physical ritual for restless hands, wherever you happen to be thinking.</p>",
+            "title": "Built for everyday carry",
+            "text": "<p>Designed to travel with you, from your desk to wherever you think next.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": [
-        "column_1",
-        "column_2",
-        "column_3"
-      ],
+      "block_order": ["b1", "b2", "b3"],
       "settings": {
-        "title": "Small object. Big difference.",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -97,16 +67,16 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 52,
-        "padding_bottom": 52
+        "padding_bottom": 40
       }
     },
-    "brand_story": {
+    "product_story": {
       "type": "image-with-text",
       "blocks": {
         "caption": {
           "type": "caption",
           "settings": {
-            "caption": "Craftsmanship",
+            "caption": "The problem",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -114,23 +84,19 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Made to last, not to impress.",
+            "heading": "Restless hands. Scattered focus.",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Every TapGlow starts as a solid block of aluminum. We mill away everything that isn't essential, leaving a tool that feels as good in year three as it did on day one.</p>",
+            "text": "<p>Constant notifications. Constant noise. Somewhere in the middle of it, your attention gets pulled in a dozen directions before lunch.</p><p>TapGlow gives restless hands somewhere quiet to go, so your mind can stay on what matters.</p>",
             "text_style": "body"
           }
         }
       },
-      "block_order": [
-        "caption",
-        "heading",
-        "text"
-      ],
+      "block_order": ["caption", "heading", "text"],
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -146,32 +112,320 @@
         "padding_bottom": 52
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "how_it_works": {
+      "type": "how-it-works",
+      "blocks": {
+        "step1": {
+          "type": "step",
+          "settings": {
+            "heading": "Hold",
+            "text": "<p>Rest it between your fingers. It sits flat, cool, and steady in the hand.</p>"
+          }
+        },
+        "step2": {
+          "type": "step",
+          "settings": {
+            "heading": "Click",
+            "text": "<p>A precise magnetic click, tuned to feel deliberate every time.</p>"
+          }
+        },
+        "step3": {
+          "type": "step",
+          "settings": {
+            "heading": "Refocus",
+            "text": "<p>The motion settles restless hands, so your attention can settle too.</p>"
+          }
+        }
+      },
+      "block_order": ["step1", "step2", "step3"],
       "settings": {
-        "title": "Shop TapGlow",
+        "eyebrow": "How it works",
+        "heading": "Three steps. One ritual.",
         "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 4,
-        "columns_desktop": 4,
         "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "feature_story_1": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Feel",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A click, tuned deliberately.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every press meets resistance, then releases into a clean, magnetic snap. It's built to feel intentional, not idle.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": ["caption", "heading", "text"],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
         "padding_top": 48,
         "padding_bottom": 48
+      }
+    },
+    "feature_story_2": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Carry",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Small enough to forget you're carrying it.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>TapGlow sits quietly in a pocket, a bag, or beside your keyboard, ready whenever restless hands need somewhere to go.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": ["caption", "heading", "text"],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "feature_story_3": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Sound",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made to be discreet.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>TapGlow is designed for quiet spaces, calls, and shared desks: a controlled interaction rather than a distraction.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": ["caption", "heading", "text"],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "feature_story_4": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Craft",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Weight you notice. Quality you feel.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every surface is considered, from the way it sits in your palm to the way it rests on a desk.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": ["caption", "heading", "text"],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "padding_top": 48,
+        "padding_bottom": 52
+      }
+    },
+    "product_showcase": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": ["vendor", "title", "price", "variant_picker", "quantity_selector", "buy_buttons"],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "social_proof": {
+      "type": "social-proof",
+      "settings": {
+        "eyebrow": "Reviews",
+        "heading": "What people notice first",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "comparison": {
+      "type": "comparison",
+      "blocks": {
+        "row1": {
+          "type": "row",
+          "settings": {
+            "label": "Premium presentation",
+            "tapglow_included": true,
+            "ordinary_included": false
+          }
+        },
+        "row2": {
+          "type": "row",
+          "settings": {
+            "label": "Discreet everyday carry",
+            "tapglow_included": true,
+            "ordinary_included": false
+          }
+        },
+        "row3": {
+          "type": "row",
+          "settings": {
+            "label": "Controlled tactile feedback",
+            "tapglow_included": true,
+            "ordinary_included": false
+          }
+        },
+        "row4": {
+          "type": "row",
+          "settings": {
+            "label": "Desk-friendly design",
+            "tapglow_included": true,
+            "ordinary_included": false
+          }
+        }
+      },
+      "block_order": ["row1", "row2", "row3", "row4"],
+      "settings": {
+        "eyebrow": "Why TapGlow",
+        "heading": "Not just another fidget toy.",
+        "heading_size": "h1",
+        "tapglow_label": "TapGlow",
+        "ordinary_label": "Ordinary fidget toys",
+        "color_scheme": "scheme-2",
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "faq": {
@@ -180,59 +434,71 @@
         "q1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What is TapGlow, exactly?",
+            "heading": "What is TapGlow?",
             "icon": "none",
-            "row_content": "<p>A CNC-machined metal click toy, designed to be carried, not stored. It's a precision object for restless hands, at your desk, in transit, or mid-thought.</p>",
+            "row_content": "<p>TapGlow is a premium magnetic clicker built for restless hands, quiet focus, and everyday carry. It's a tactile tool, not a toy.</p>",
             "page": ""
           }
         },
         "q2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Is it actually useful, or just satisfying?",
+            "heading": "Who is it for?",
             "icon": "none",
-            "row_content": "<p>Both. The click gives restless hands somewhere to go, so your attention can stay where you put it. Many people use it during calls, deep work, or study sessions.</p>",
+            "row_content": "<p>Professionals, students, and anyone who thinks better with something purposeful to hold, at a desk, in a lecture, or on a call.</p>",
             "page": ""
           }
         },
         "q3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What's it made from?",
+            "heading": "Is it noisy?",
             "icon": "none",
-            "row_content": "<p>Solid aircraft-grade aluminum, precision-milled and finished by hand. No plastic housing, no glued parts.</p>",
+            "row_content": "<p>TapGlow is designed to be discreet. Final acoustic details will be confirmed closer to launch.</p>",
             "page": ""
           }
         },
         "q4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Will the click wear out?",
+            "heading": "Can I carry it in my pocket?",
             "icon": "none",
-            "row_content": "<p>No. The magnetic mechanism is rated for hundreds of thousands of clicks, built to outlast the desk it sits on.</p>",
+            "row_content": "<p>Yes. TapGlow is designed as an everyday carry object, sized to travel with you.</p>",
             "page": ""
           }
         },
         "q5": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Does it come in different finishes?",
+            "heading": "Is it a toy?",
             "icon": "none",
-            "row_content": "<p>Yes, see the available options on the product page. New finishes are added regularly.</p>",
+            "row_content": "<p>No. TapGlow is designed as a focus tool and everyday carry object for adults, not a children's toy.</p>",
+            "page": ""
+          }
+        },
+        "q6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will it ship?",
+            "icon": "none",
+            "row_content": "<p>TapGlow hasn't launched yet. Shipping timelines will be shared here as soon as they're confirmed.</p>",
+            "page": ""
+          }
+        },
+        "q7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the return policy?",
+            "icon": "none",
+            "row_content": "<p>Our return policy will be published before TapGlow becomes available for purchase.</p>",
             "page": ""
           }
         }
       },
-      "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5"
-      ],
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7"],
       "settings": {
         "caption": "FAQ",
-        "heading": "Questions, answered",
+        "heading": "Frequently asked questions",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
@@ -245,46 +511,52 @@
         "padding_bottom": 60
       }
     },
-    "newsletter": {
-      "type": "newsletter",
+    "final_cta": {
+      "type": "rich-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Be first to own one.",
-            "heading_size": "h1"
+            "heading": "Focus, one click at a time.",
+            "heading_size": "h0"
           }
         },
-        "paragraph": {
-          "type": "paragraph",
+        "button": {
+          "type": "button",
           "settings": {
-            "text": "<p>Join the list for early access, launch pricing, and a first look at the machining process.</p>"
+            "button_label": "Discover TapGlow",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
-        },
-        "email_form": {
-          "type": "email_form",
-          "settings": {}
         }
       },
-      "block_order": [
-        "heading",
-        "paragraph",
-        "email_form"
-      ],
+      "block_order": ["heading", "button"],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
-        "padding_top": 60,
-        "padding_bottom": 72
+        "padding_top": 72,
+        "padding_bottom": 80
       }
     }
   },
   "order": [
-    "image_banner",
-    "value_props",
-    "brand_story",
-    "featured_collection",
+    "hero",
+    "benefit_strip",
+    "product_story",
+    "how_it_works",
+    "feature_story_1",
+    "feature_story_2",
+    "feature_story_3",
+    "feature_story_4",
+    "product_showcase",
+    "social_proof",
+    "comparison",
     "faq",
-    "newsletter"
+    "final_cta"
   ]
 }

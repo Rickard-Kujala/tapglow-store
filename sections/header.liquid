@@ -36,6 +36,35 @@
     }
   {%- endif -%}
 
+  {%- if section.settings.transparent_on_home -%}
+    .header-wrapper--transparent {
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    .header-wrapper--transparent .header__heading-link,
+    .header-wrapper--transparent .header__icon,
+    .header-wrapper--transparent .list-menu__item--link,
+    .header-wrapper--transparent .header__heading-logo-wrapper .h2 {
+      color: #f7f3ec;
+    }
+
+    .section-header.scrolled-past-header .header-wrapper--transparent,
+    .section-header.shopify-section-header-sticky .header-wrapper--transparent {
+      background-color: rgb(var(--color-background));
+      border-color: rgba(var(--color-foreground), 0.08);
+    }
+
+    .section-header.scrolled-past-header .header-wrapper--transparent .header__heading-link,
+    .section-header.scrolled-past-header .header-wrapper--transparent .header__icon,
+    .section-header.scrolled-past-header .header-wrapper--transparent .list-menu__item--link,
+    .section-header.shopify-section-header-sticky .header-wrapper--transparent .header__heading-link,
+    .section-header.shopify-section-header-sticky .header-wrapper--transparent .header__icon,
+    .section-header.shopify-section-header-sticky .header-wrapper--transparent .list-menu__item--link {
+      color: rgb(var(--color-foreground));
+    }
+  {%- endif -%}
+
   .menu-drawer-container {
     display: flex;
   }
@@ -122,7 +151,7 @@
   {% if header_tag == 'sticky-header' %}
     data-sticky-type="{{ section.settings.sticky_header_type }}"
   {% endif %}
-  class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}"
+  class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}{% if section.settings.transparent_on_home and request.page_type == 'index' %} header-wrapper--transparent{% endif %}"
 >
   {%- liquid
     assign social_links = false
@@ -568,6 +597,13 @@
       "id": "show_line_separator",
       "default": true,
       "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "transparent_on_home",
+      "default": true,
+      "label": "Transparent over homepage hero",
+      "info": "Header is transparent at the top of the homepage, then becomes solid once you scroll."
     },
     {
       "type": "header",

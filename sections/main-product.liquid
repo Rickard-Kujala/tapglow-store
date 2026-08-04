@@ -698,6 +698,29 @@
         </div>
       </div>
 
+      <div class="sticky-mobile-cta">
+        <div class="sticky-mobile-cta__info">
+          <p class="sticky-mobile-cta__title">{{ product.title | escape }}</p>
+          <div class="sticky-mobile-cta__price">
+            {%- render 'price', product: product, use_variant: true, price_class: '' -%}
+          </div>
+        </div>
+        <button
+          type="submit"
+          form="{{ product_form_id }}"
+          class="button button--primary sticky-mobile-cta__button"
+          {% if product.selected_or_first_available_variant.available == false %}
+            disabled
+          {% endif %}
+        >
+          {%- if product.selected_or_first_available_variant.available == false -%}
+            {{ 'products.product.sold_out' | t }}
+          {%- else -%}
+            {{ 'products.product.add_to_cart' | t }}
+          {%- endif -%}
+        </button>
+      </div>
+
       {% render 'product-media-modal', variant_images: variant_images %}
 
       {% assign popups = section.blocks | where: 'type', 'popup' %}
