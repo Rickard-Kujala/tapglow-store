@@ -34,18 +34,7 @@
 .how-it-works__step {
   position: relative;
   padding-top: 2.8rem;
-  border-top: 1px solid rgba(24, 20, 15, 0.14);
-}
-
-.color-scheme-1 .how-it-works__step,
-.color-scheme-2 .how-it-works__step,
-.color-scheme-5 .how-it-works__step {
-  border-top-color: rgba(24, 20, 15, 0.14);
-}
-
-.color-scheme-3 .how-it-works__step,
-.color-scheme-4 .how-it-works__step {
-  border-top-color: rgba(247, 243, 236, 0.18);
+  border-top: 1px solid rgba(245, 245, 243, 0.16);
 }
 
 .how-it-works__step-number {

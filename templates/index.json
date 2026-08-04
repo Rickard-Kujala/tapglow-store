@@ -4,115 +4,22 @@
       "type": "hero",
       "settings": {
         "product": "tapglow-clicker",
-        "image_overlay_opacity": 35,
-        "image_height": "large",
+        "image_overlay_opacity": 45,
+        "image_height": "full-screen",
         "eyebrow": "TAPGLOW",
         "heading": "Engineered for focus.",
-        "heading_size": "hxl",
-        "text": "<p>A precision magnetic clicker designed for restless hands and busy minds.</p>",
-        "primary_button_label": "Discover TapGlow",
+        "heading_size": "hxxl",
+        "text": "<p>A precision magnetic clicker for restless hands.</p>",
+        "primary_button_label": "Buy Now",
         "primary_button_link": "/products/tapglow-clicker",
-        "secondary_button_label": "See the product",
-        "secondary_button_link": "#shopify-section-product_showcase",
+        "secondary_button_label": "Learn More",
+        "secondary_button_link": "#shopify-section-feature_story",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
         "color_scheme": "scheme-4",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "benefit_strip": {
-      "type": "multicolumn",
-      "blocks": {
-        "b1": {
-          "type": "column",
-          "settings": {
-            "title": "Satisfying magnetic feedback",
-            "text": "<p>Precision magnets deliver a sharp, controlled click every time.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "b2": {
-          "type": "column",
-          "settings": {
-            "title": "Pocket-sized focus",
-            "text": "<p>Small enough to disappear into a pocket. Present enough to matter.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "b3": {
-          "type": "column",
-          "settings": {
-            "title": "Built for everyday carry",
-            "text": "<p>Designed to travel with you, from your desk to wherever you think next.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": ["b1", "b2", "b3"],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 52
-      }
-    },
-    "product_story": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption": {
-          "type": "caption",
-          "settings": {
-            "caption": "The problem",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Restless hands. Scattered focus.",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Constant notifications. Constant noise. Somewhere in the middle of it, your attention gets pulled in a dozen directions before lunch.</p><p>TapGlow gives restless hands somewhere quiet to go, so your mind can stay on what matters.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": ["caption", "heading", "text"],
-      "settings": {
-        "product": "tapglow-clicker",
-        "product_image_index": 1,
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-2",
-        "padding_top": 64,
-        "padding_bottom": 64
       }
     },
     "how_it_works": {
@@ -122,21 +29,21 @@
           "type": "step",
           "settings": {
             "heading": "Hold",
-            "text": "<p>Rest it between your fingers. It sits flat, cool, and steady in the hand.</p>"
+            "text": "<p>Rest it between your fingers. Flat, cool, and steady in the hand.</p>"
           }
         },
         "step2": {
           "type": "step",
           "settings": {
             "heading": "Click",
-            "text": "<p>A precise magnetic click, tuned to feel deliberate every time.</p>"
+            "text": "<p>A precise magnetic click, tuned to feel deliberate.</p>"
           }
         },
         "step3": {
           "type": "step",
           "settings": {
             "heading": "Refocus",
-            "text": "<p>The motion settles restless hands, so your attention can settle too.</p>"
+            "text": "<p>The motion settles restless hands, so attention can settle too.</p>"
           }
         }
       },
@@ -144,13 +51,13 @@
       "settings": {
         "eyebrow": "How it works",
         "heading": "Three steps. One ritual.",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "color_scheme": "scheme-1",
-        "padding_top": 64,
-        "padding_bottom": 64
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
-    "feature_story_1": {
+    "feature_story": {
       "type": "image-with-text",
       "blocks": {
         "caption": {
@@ -164,14 +71,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "A click, tuned deliberately.",
-            "heading_size": "h1"
+            "heading": "Weight you notice. A click you trust.",
+            "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Every press meets resistance, then releases into a clean, magnetic snap. It's built to feel intentional, not idle.</p>",
+            "text": "<p>Machined for grip, tuned for a clean magnetic snap.</p>",
             "text_style": "body"
           }
         }
@@ -179,54 +86,10 @@
       "block_order": ["caption", "heading", "text"],
       "settings": {
         "product": "tapglow-clicker",
-        "product_image_index": 2,
+        "product_image_index": 1,
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "large",
         "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-1",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "feature_story_2": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption": {
-          "type": "caption",
-          "settings": {
-            "caption": "Carry",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Small enough to forget you're carrying it.",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>TapGlow sits quietly in a pocket, a bag, or beside your keyboard, ready whenever restless hands need somewhere to go.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": ["caption", "heading", "text"],
-      "settings": {
-        "product": "tapglow-clicker",
-        "product_image_index": 3,
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "middle",
@@ -234,96 +97,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "feature_story_3": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption": {
-          "type": "caption",
-          "settings": {
-            "caption": "Sound",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Made to be discreet.",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>TapGlow is designed for quiet spaces, calls, and shared desks: a controlled interaction rather than a distraction.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": ["caption", "heading", "text"],
-      "settings": {
-        "product": "tapglow-clicker",
-        "product_image_index": 4,
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-1",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "feature_story_4": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption": {
-          "type": "caption",
-          "settings": {
-            "caption": "Craft",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Weight you notice. Quality you feel.",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Every surface is considered, from the way it sits in your palm to the way it rests on a desk.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": ["caption", "heading", "text"],
-      "settings": {
-        "product": "tapglow-clicker",
-        "product_image_index": 5,
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-2",
-        "padding_top": 60,
-        "padding_bottom": 64
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "product_showcase": {
@@ -339,7 +114,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "price": {
@@ -380,29 +155,18 @@
       "block_order": ["vendor", "title", "price", "variant_picker", "quantity_selector", "buy_buttons", "trust"],
       "settings": {
         "product": "tapglow-clicker",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-5",
         "secondary_background": false,
-        "media_size": "medium",
+        "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": false,
-        "enable_full_gallery": true,
+        "enable_full_gallery": false,
         "enable_video_looping": false,
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "social_proof": {
-      "type": "social-proof",
-      "settings": {
-        "eyebrow": "Reviews",
-        "heading": "What people notice first",
-        "heading_size": "h1",
-        "color_scheme": "scheme-1",
-        "padding_top": 64,
-        "padding_bottom": 64
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "comparison": {
@@ -448,9 +212,9 @@
         "heading_size": "h1",
         "tapglow_label": "TapGlow",
         "ordinary_label": "Ordinary fidget toys",
-        "color_scheme": "scheme-2",
-        "padding_top": 64,
-        "padding_bottom": 64
+        "color_scheme": "scheme-1",
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "faq": {
@@ -461,20 +225,11 @@
           "settings": {
             "heading": "What is TapGlow?",
             "icon": "none",
-            "row_content": "<p>TapGlow is a premium magnetic clicker built for restless hands, quiet focus, and everyday carry. It's a tactile tool, not a toy.</p>",
+            "row_content": "<p>A premium magnetic clicker built for restless hands, quiet focus, and everyday carry. A tactile tool, not a toy.</p>",
             "page": ""
           }
         },
         "q2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Who is it for?",
-            "icon": "none",
-            "row_content": "<p>Professionals, students, and anyone who thinks better with something purposeful to hold, at a desk, in a lecture, or on a call.</p>",
-            "page": ""
-          }
-        },
-        "q3": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Is it noisy?",
@@ -483,7 +238,7 @@
             "page": ""
           }
         },
-        "q4": {
+        "q3": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Can I carry it in my pocket?",
@@ -492,16 +247,7 @@
             "page": ""
           }
         },
-        "q5": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Is it a toy?",
-            "icon": "none",
-            "row_content": "<p>No. TapGlow is designed as a focus tool and everyday carry object for adults, not a children's toy.</p>",
-            "page": ""
-          }
-        },
-        "q6": {
+        "q4": {
           "type": "collapsible_row",
           "settings": {
             "heading": "When will it ship?",
@@ -510,7 +256,7 @@
             "page": ""
           }
         },
-        "q7": {
+        "q5": {
           "type": "collapsible_row",
           "settings": {
             "heading": "What is the return policy?",
@@ -520,20 +266,20 @@
           }
         }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7"],
+      "block_order": ["q1", "q2", "q3", "q4", "q5"],
       "settings": {
         "caption": "FAQ",
         "heading": "Frequently asked questions",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "heading_alignment": "center",
         "layout": "none",
-        "container_color_scheme": "scheme-2",
-        "color_scheme": "scheme-1",
+        "container_color_scheme": "scheme-3",
+        "color_scheme": "scheme-2",
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 64,
-        "padding_bottom": 72
+        "padding_top": 72,
+        "padding_bottom": 80
       }
     },
     "final_cta": {
@@ -543,13 +289,13 @@
           "type": "heading",
           "settings": {
             "heading": "Focus, one click at a time.",
-            "heading_size": "h0"
+            "heading_size": "hxl"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Discover TapGlow",
+            "button_label": "Buy Now",
             "button_link": "/products/tapglow-clicker",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -564,22 +310,16 @@
         "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
-        "padding_top": 88,
-        "padding_bottom": 96
+        "padding_top": 96,
+        "padding_bottom": 104
       }
     }
   },
   "order": [
     "hero",
-    "benefit_strip",
-    "product_story",
     "how_it_works",
-    "feature_story_1",
-    "feature_story_2",
-    "feature_story_3",
-    "feature_story_4",
+    "feature_story",
     "product_showcase",
-    "social_proof",
     "comparison",
     "faq",
     "final_cta"

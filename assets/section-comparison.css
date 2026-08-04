@@ -20,12 +20,7 @@
 .comparison__table {
   max-width: 64rem;
   margin: 0 auto;
-  border: 1px solid rgba(24, 20, 15, 0.14);
-}
-
-.color-scheme-3 .comparison__table,
-.color-scheme-4 .comparison__table {
-  border-color: rgba(247, 243, 236, 0.18);
+  border: 1px solid rgba(245, 245, 243, 0.16);
 }
 
 .comparison__row {
@@ -34,12 +29,7 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem 2.4rem;
-  border-bottom: 1px solid rgba(24, 20, 15, 0.1);
-}
-
-.color-scheme-3 .comparison__row,
-.color-scheme-4 .comparison__row {
-  border-bottom-color: rgba(247, 243, 236, 0.14);
+  border-bottom: 1px solid rgba(245, 245, 243, 0.12);
 }
 
 .comparison__row:last-child {

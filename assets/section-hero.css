@@ -71,7 +71,7 @@
 }
 
 .hero__placeholder {
-  background: #0d0b09;
+  background: #111315;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,7 +87,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: #0d0b09;
+  background: #111315;
 }
 
 .hero__content-wrapper {

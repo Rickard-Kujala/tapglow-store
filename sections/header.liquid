@@ -46,7 +46,7 @@
     .header-wrapper--transparent .header__icon,
     .header-wrapper--transparent .list-menu__item--link,
     .header-wrapper--transparent .header__heading-logo-wrapper .h2 {
-      color: #f7f3ec;
+      color: #f5f5f3;
     }
 
     .section-header.scrolled-past-header .header-wrapper--transparent,
@@ -183,7 +183,7 @@
       <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
         {%- if settings.logo != blank -%}
           <div class="header__heading-logo-wrapper">
-            {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+            {%- assign logo_alt = settings.logo.alt | default: 'TapGlow' | escape -%}
             {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
             {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
             {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
@@ -201,7 +201,7 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <span class="h2">TapGlow</span>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -226,7 +226,7 @@
       <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
         {%- if settings.logo != blank -%}
           <div class="header__heading-logo-wrapper">
-            {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+            {%- assign logo_alt = settings.logo.alt | default: 'TapGlow' | escape -%}
             {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
             {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
             {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
@@ -244,7 +244,7 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <span class="h2">TapGlow</span>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -459,7 +459,7 @@
   {
     "@context": "http://schema.org",
     "@type": "Organization",
-    "name": {{ shop.name | json }},
+    "name": {{ "TapGlow" | json }},
     {% if settings.logo %}
       "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
     {% endif %}
@@ -484,7 +484,7 @@
     {
       "@context": "http://schema.org",
       "@type": "WebSite",
-      "name": {{ shop.name | json }},
+      "name": {{ "TapGlow" | json }},
       "potentialAction": {
         "@type": "SearchAction",
         "target": {{ potential_action_target | json }},
