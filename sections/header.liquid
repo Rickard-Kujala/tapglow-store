@@ -36,6 +36,28 @@
     }
   {%- endif -%}
 
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  .header__buy-now {
+    padding: 0.7rem 1.8rem;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    background-color: #b5762e;
+    color: #111315;
+    border-color: #b5762e;
+    transition: opacity 0.2s ease;
+  }
+
+  .header__buy-now:hover {
+    opacity: 0.85;
+    background-color: #b5762e;
+    color: #111315;
+  }
+
   {%- if section.settings.transparent_on_home -%}
     .header-wrapper--transparent {
       background-color: transparent;
@@ -145,6 +167,13 @@
   if section.settings.sticky_header_type != 'none'
     assign header_tag = 'sticky-header'
   endif
+
+  assign buy_now_anchor = '#shopify-section-product_showcase'
+  if request.page_type == 'index'
+    assign buy_now_url = buy_now_anchor
+  else
+    assign buy_now_url = routes.root_url | append: buy_now_anchor
+  endif
 %}
 
 <{{ header_tag }}
@@ -165,13 +194,19 @@
       assign localization_forms = true
     endif
   -%}
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled and section.settings.enable_account_icon %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
     {%- liquid
       if section.settings.menu != blank
         render 'header-drawer'
       endif
 
-      if section.settings.logo_position == 'top-center' or section.settings.menu == blank
+      assign show_left_search = false
+      if section.settings.enable_search and section.settings.logo_position == 'top-center'
+        assign show_left_search = true
+      elsif section.settings.enable_search and section.settings.menu == blank
+        assign show_left_search = true
+      endif
+      if show_left_search
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif
     -%}
@@ -276,9 +311,11 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
+      {%- if section.settings.enable_search -%}
+        {% render 'header-search', input_id: 'Search-In-Modal' %}
+      {%- endif -%}
 
-      {%- if shop.customer_accounts_enabled -%}
+      {%- if shop.customer_accounts_enabled and section.settings.enable_account_icon -%}
         <a
           href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
           class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}"
@@ -313,6 +350,10 @@
             {% render block %}
         {%- endcase -%}
       {%- endfor -%}
+
+      <a href="{{ buy_now_url }}" class="header__buy-now button button--primary">
+        Buy Now
+      </a>
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {% if cart == empty %}
@@ -645,6 +686,18 @@
       "default": true,
       "label": "t:sections.header.settings.enable_customer_avatar.label",
       "info": "t:sections.header.settings.enable_customer_avatar.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_search",
+      "default": false,
+      "label": "Show search icon"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_account_icon",
+      "default": false,
+      "label": "Show account icon"
     },
     {
       "type": "header",
