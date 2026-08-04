@@ -125,7 +125,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 3rem 1.5rem 2.5rem;
+  padding: 4.5rem 1.75rem 2.75rem;
 }
 
 .hero__content-top,
@@ -148,7 +148,7 @@
 @media screen and (min-width: 750px) {
   .hero__content {
     inset: auto;
-    left: 20%;
+    left: 9%;
     top: 9%;
     margin-inline: 0;
     width: auto;
@@ -156,7 +156,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    gap: 3.2rem;
+    gap: 3.6rem;
     padding: 0;
   }
 
@@ -167,7 +167,7 @@
 
   .hero__overlay {
     background: radial-gradient(
-      ellipse 55% 42% at 24% 14%,
+      ellipse 50% 40% at 13% 13%,
       #111315 0%,
       rgba(17, 19, 21, 0.65) 45%,
       rgba(17, 19, 21, 0) 75%
@@ -281,6 +281,7 @@
   .hero__ctas {
     gap: 2rem;
     justify-content: flex-start;
+    align-items: baseline;
   }
 }
 

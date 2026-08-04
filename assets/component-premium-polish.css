@@ -25,7 +25,18 @@
 
 /* Product page: consistent vertical rhythm between info blocks */
 body.template-product .product__info-container > * + * {
-  margin-top: 1.8rem;
+  margin-top: 2.4rem;
+}
+
+/* Product page: trust row reads as its own premium feature section */
+body.template-product .icon-with-text {
+  padding-top: 2.8rem;
+  border-top: 1px solid rgba(245, 245, 243, 0.12);
+  --icon-size: calc(var(--font-heading-scale) * 3.4rem);
+}
+
+body.template-product .icon-with-text--horizontal {
+  column-gap: 4rem;
 }
 
 /* Product page: Add to Cart reads as the dominant action; Shop Pay stays secondary */
