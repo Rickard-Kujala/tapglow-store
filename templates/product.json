@@ -57,7 +57,7 @@
           "settings": {
             "heading": "Shipping",
             "icon": "truck",
-            "content": "<p>Shipping details will be published here once TapGlow is available to order.</p>"
+            "content": "<p>Shipping options and delivery estimates are shown at checkout.</p>"
           }
         },
         "tab_returns": {
@@ -65,7 +65,7 @@
           "settings": {
             "heading": "Returns",
             "icon": "return",
-            "content": "<p>Our return policy will be confirmed before launch and shown here.</p>"
+            "content": "<p>We're finalizing our return policy and will publish the full details here shortly.</p>"
           }
         },
         "tab_care": {
@@ -148,7 +148,7 @@
           "settings": {
             "heading": "When will it ship?",
             "icon": "none",
-            "row_content": "<p>TapGlow hasn't launched yet. Shipping timelines will be shared here as soon as they're confirmed.</p>",
+            "row_content": "<p>TapGlow is available to order now. Shipping options and delivery estimates are shown at checkout.</p>",
             "page": ""
           }
         },
@@ -157,7 +157,7 @@
           "settings": {
             "heading": "What is the return policy?",
             "icon": "none",
-            "row_content": "<p>Our return policy will be published before TapGlow becomes available for purchase.</p>",
+            "row_content": "<p>We're finalizing our return policy and will publish the full details here shortly.</p>",
             "page": ""
           }
         }

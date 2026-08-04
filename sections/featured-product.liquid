@@ -76,7 +76,11 @@
       <div class="featured-product product product--{{ section.settings.media_size }} grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
         <div class="grid__item product__media-wrapper">
           {%- unless placeholder -%}
-            {% render 'product-media-gallery', product: product, variant_images: variant_images, limit: 1 %}
+            {%- if section.settings.enable_full_gallery -%}
+              {% render 'product-media-gallery', product: product, variant_images: variant_images %}
+            {%- else -%}
+              {% render 'product-media-gallery', product: product, variant_images: variant_images, limit: 1 %}
+            {%- endif -%}
           {%- else -%}
             <div class="product__media-item">
               <div
@@ -1497,6 +1501,13 @@
       "id": "hide_variants",
       "default": false,
       "label": "t:sections.main-product.settings.hide_variants.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_full_gallery",
+      "default": true,
+      "label": "Show full media gallery",
+      "info": "When off, shows only the primary image."
     },
     {
       "type": "checkbox",

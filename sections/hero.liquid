@@ -84,6 +84,18 @@
         }}
       {%- endif -%}
     </div>
+  {%- elsif section.settings.product.featured_image != blank -%}
+    <div class="hero__media">
+      {{
+        section.settings.product.featured_image
+        | image_url: width: 3200
+        | image_tag:
+          sizes: '100vw',
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3200',
+          loading: 'eager',
+          alt: section.settings.product.featured_image.alt
+      }}
+    </div>
   {%- else -%}
     <div class="hero__placeholder" role="img" aria-label="{{ shop.name | escape }}">
       <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -151,6 +163,12 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product",
+      "info": "Used as a fallback image when no image or video is selected above."
+    },
     {
       "type": "image_picker",
       "id": "image",

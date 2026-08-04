@@ -3,6 +3,7 @@
     "hero": {
       "type": "hero",
       "settings": {
+        "product": "tapglow-clicker",
         "image_overlay_opacity": 35,
         "image_height": "large",
         "eyebrow": "TAPGLOW",
@@ -10,9 +11,9 @@
         "heading_size": "hxl",
         "text": "<p>A precision magnetic clicker designed for restless hands and busy minds.</p>",
         "primary_button_label": "Discover TapGlow",
-        "primary_button_link": "shopify://collections/all",
-        "secondary_button_label": "See how it works",
-        "secondary_button_link": "#shopify-section-how_it_works",
+        "primary_button_link": "/products/tapglow-clicker",
+        "secondary_button_label": "See the product",
+        "secondary_button_link": "#shopify-section-product_showcase",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
@@ -352,10 +353,23 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
+        },
+        "trust": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "lock",
+            "heading_1": "Secure checkout",
+            "icon_2": "truck",
+            "heading_2": "Shipping calculated at checkout",
+            "icon_3": "chat_bubble",
+            "heading_3": "Questions? Check our FAQ"
+          }
         }
       },
-      "block_order": ["vendor", "title", "price", "variant_picker", "quantity_selector", "buy_buttons"],
+      "block_order": ["vendor", "title", "price", "variant_picker", "quantity_selector", "buy_buttons", "trust"],
       "settings": {
+        "product": "tapglow-clicker",
         "color_scheme": "scheme-1",
         "secondary_background": false,
         "media_size": "medium",
@@ -364,6 +378,7 @@
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": false,
+        "enable_full_gallery": true,
         "enable_video_looping": false,
         "padding_top": 56,
         "padding_bottom": 56
@@ -481,7 +496,7 @@
           "settings": {
             "heading": "When will it ship?",
             "icon": "none",
-            "row_content": "<p>TapGlow hasn't launched yet. Shipping timelines will be shared here as soon as they're confirmed.</p>",
+            "row_content": "<p>TapGlow is available to order now. Shipping options and delivery estimates are shown at checkout.</p>",
             "page": ""
           }
         },
@@ -490,7 +505,7 @@
           "settings": {
             "heading": "What is the return policy?",
             "icon": "none",
-            "row_content": "<p>Our return policy will be published before TapGlow becomes available for purchase.</p>",
+            "row_content": "<p>We're finalizing our return policy and will publish the full details here shortly.</p>",
             "page": ""
           }
         }
@@ -525,7 +540,7 @@
           "type": "button",
           "settings": {
             "button_label": "Discover TapGlow",
-            "button_link": "shopify://collections/all",
+            "button_link": "/products/tapglow-clicker",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
