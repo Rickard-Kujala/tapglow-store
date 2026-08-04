@@ -122,8 +122,15 @@
           <p class="hero__eyebrow caption-with-letter-spacing">{{ section.settings.eyebrow | escape }}</p>
         {%- endif -%}
         {%- if section.settings.heading != blank -%}
+          {%- assign heading_sentences = section.settings.heading | split: '. ' -%}
           <h1 class="hero__heading inline-richtext {{ section.settings.heading_size }}">
-            {{ section.settings.heading }}
+            {%- if heading_sentences.size > 1 -%}
+              {%- for sentence in heading_sentences -%}
+                <span class="hero__heading-line">{{ sentence }}{% unless forloop.last %}.{% endunless %}</span>
+              {%- endfor -%}
+            {%- else -%}
+              {{ section.settings.heading }}
+            {%- endif -%}
           </h1>
         {%- endif -%}
       </div>

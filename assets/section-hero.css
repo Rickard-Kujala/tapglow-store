@@ -241,6 +241,10 @@
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
+.hero__heading-line {
+  display: block;
+}
+
 .hero__heading.hxxl {
   font-size: clamp(2.12rem, 8.1vw, 2.43rem);
   line-height: 1.2;
