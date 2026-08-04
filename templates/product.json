@@ -41,11 +41,11 @@
           "settings": {
             "layout": "horizontal",
             "icon_1": "lightning_bolt",
-            "heading_1": "Precision magnetic click",
-            "icon_2": "box",
-            "heading_2": "Compact, everyday carry",
-            "icon_3": "stopwatch",
-            "heading_3": "Designed for focus"
+            "heading_1": "Crisp tactile clicks",
+            "icon_2": "star",
+            "heading_2": "Lights up with every press",
+            "icon_3": "box",
+            "heading_3": "Pocket-sized and portable"
           }
         },
         "description": {
@@ -121,7 +121,7 @@
           "settings": {
             "heading": "What is TapGlow?",
             "icon": "none",
-            "row_content": "<p>TapGlow is a premium magnetic clicker built for restless hands, quiet focus, and everyday carry. It's a tactile tool, not a toy.</p>",
+            "row_content": "<p>A pocket-sized RGB clicker with four tactile keys, each with crisp feedback and instant light-up.</p>",
             "page": ""
           }
         },
@@ -130,20 +130,11 @@
           "settings": {
             "heading": "Is it noisy?",
             "icon": "none",
-            "row_content": "<p>TapGlow is designed to be discreet. Final acoustic details will be confirmed closer to launch.</p>",
+            "row_content": "<p>Each key has a satisfying tactile click. Exact sound levels will be confirmed closer to launch.</p>",
             "page": ""
           }
         },
         "q3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I carry it in my pocket?",
-            "icon": "none",
-            "row_content": "<p>Yes. TapGlow is designed as an everyday carry object, sized to travel with you.</p>",
-            "page": ""
-          }
-        },
-        "q4": {
           "type": "collapsible_row",
           "settings": {
             "heading": "When will it ship?",
@@ -152,7 +143,7 @@
             "page": ""
           }
         },
-        "q5": {
+        "q4": {
           "type": "collapsible_row",
           "settings": {
             "heading": "What is the return policy?",
@@ -162,7 +153,7 @@
           }
         }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5"],
+      "block_order": ["q1", "q2", "q3", "q4"],
       "settings": {
         "caption": "FAQ",
         "heading": "Frequently asked questions",
@@ -184,7 +175,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Focus, one click at a time.",
+            "heading": "Ready for your next click?",
             "heading_size": "h0"
           }
         },

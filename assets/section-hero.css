@@ -72,15 +72,6 @@
 
 .hero__placeholder {
   background: #111315;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero__placeholder svg {
-  width: 8rem;
-  height: 8rem;
-  opacity: 0.35;
 }
 
 .hero__overlay {

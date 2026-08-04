@@ -7,13 +7,13 @@
         "image_overlay_opacity": 45,
         "image_height": "full-screen",
         "eyebrow": "TAPGLOW",
-        "heading": "Engineered for focus.",
+        "heading": "Satisfying clicks. Instant glow.",
         "heading_size": "hxxl",
-        "text": "<p>A precision magnetic clicker for restless hands.</p>",
+        "text": "<p>A pocket-sized RGB clicker with crisp tactile feedback.</p>",
         "primary_button_label": "Buy Now",
         "primary_button_link": "/products/tapglow-clicker",
-        "secondary_button_label": "Learn More",
-        "secondary_button_link": "#shopify-section-feature_story",
+        "secondary_button_label": "See It in Action",
+        "secondary_button_link": "#shopify-section-product_showcase",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
@@ -22,83 +22,53 @@
         "padding_bottom": 0
       }
     },
-    "how_it_works": {
-      "type": "how-it-works",
+    "benefits": {
+      "type": "multicolumn",
       "blocks": {
-        "step1": {
-          "type": "step",
+        "b1": {
+          "type": "column",
           "settings": {
-            "heading": "Hold",
-            "text": "<p>Rest it between your fingers. Flat, cool, and steady in the hand.</p>"
+            "title": "Crisp tactile clicks",
+            "text": "<p>Real resistance. Clean release.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "step2": {
-          "type": "step",
+        "b2": {
+          "type": "column",
           "settings": {
-            "heading": "Click",
-            "text": "<p>A precise magnetic click, tuned to feel deliberate.</p>"
+            "title": "Lights up with every press",
+            "text": "<p>RGB feedback with every click.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "step3": {
-          "type": "step",
+        "b3": {
+          "type": "column",
           "settings": {
-            "heading": "Refocus",
-            "text": "<p>The motion settles restless hands, so attention can settle too.</p>"
+            "title": "Pocket-sized and portable",
+            "text": "<p>Small enough to take anywhere.</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
-      "block_order": ["step1", "step2", "step3"],
+      "block_order": ["b1", "b2", "b3"],
       "settings": {
-        "eyebrow": "How it works",
-        "heading": "Three steps. One ritual.",
-        "heading_size": "h0",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
         "color_scheme": "scheme-1",
-        "padding_top": 72,
-        "padding_bottom": 72
-      }
-    },
-    "feature_story": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption": {
-          "type": "caption",
-          "settings": {
-            "caption": "Feel",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Weight you notice. A click you trust.",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Machined for grip, tuned for a clean magnetic snap.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": ["caption", "heading", "text"],
-      "settings": {
-        "product": "tapglow-clicker",
-        "product_image_index": 1,
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-2",
-        "padding_top": 72,
-        "padding_bottom": 72
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 56,
+        "padding_bottom": 48
       }
     },
     "product_showcase": {
@@ -165,56 +135,44 @@
         "hide_variants": false,
         "enable_full_gallery": false,
         "enable_video_looping": false,
-        "padding_top": 72,
-        "padding_bottom": 72
+        "padding_top": 56,
+        "padding_bottom": 56
       }
     },
-    "comparison": {
-      "type": "comparison",
+    "editorial": {
+      "type": "image-with-text",
       "blocks": {
-        "row1": {
-          "type": "row",
+        "heading": {
+          "type": "heading",
           "settings": {
-            "label": "Premium presentation",
-            "tapglow_included": true,
-            "ordinary_included": false
+            "heading": "Click. Glow. Repeat.",
+            "heading_size": "h0"
           }
         },
-        "row2": {
-          "type": "row",
+        "text": {
+          "type": "text",
           "settings": {
-            "label": "Discreet everyday carry",
-            "tapglow_included": true,
-            "ordinary_included": false
-          }
-        },
-        "row3": {
-          "type": "row",
-          "settings": {
-            "label": "Controlled tactile feedback",
-            "tapglow_included": true,
-            "ordinary_included": false
-          }
-        },
-        "row4": {
-          "type": "row",
-          "settings": {
-            "label": "Desk-friendly design",
-            "tapglow_included": true,
-            "ordinary_included": false
+            "text": "<p>Four satisfying keys. Instant RGB feedback. A small tactile gadget made for desks, pockets and restless hands.</p>",
+            "text_style": "body"
           }
         }
       },
-      "block_order": ["row1", "row2", "row3", "row4"],
+      "block_order": ["heading", "text"],
       "settings": {
-        "eyebrow": "Why TapGlow",
-        "heading": "Not just another fidget toy.",
-        "heading_size": "h1",
-        "tapglow_label": "TapGlow",
-        "ordinary_label": "Ordinary fidget toys",
-        "color_scheme": "scheme-1",
-        "padding_top": 72,
-        "padding_bottom": 72
+        "product": "tapglow-clicker",
+        "product_image_index": 3,
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "faq": {
@@ -225,7 +183,7 @@
           "settings": {
             "heading": "What is TapGlow?",
             "icon": "none",
-            "row_content": "<p>A premium magnetic clicker built for restless hands, quiet focus, and everyday carry. A tactile tool, not a toy.</p>",
+            "row_content": "<p>A pocket-sized RGB clicker with four tactile keys, each with crisp feedback and instant light-up.</p>",
             "page": ""
           }
         },
@@ -234,20 +192,11 @@
           "settings": {
             "heading": "Is it noisy?",
             "icon": "none",
-            "row_content": "<p>TapGlow is designed to be discreet. Final acoustic details will be confirmed closer to launch.</p>",
+            "row_content": "<p>Each key has a satisfying tactile click. Exact sound levels will be confirmed closer to launch.</p>",
             "page": ""
           }
         },
         "q3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I carry it in my pocket?",
-            "icon": "none",
-            "row_content": "<p>Yes. TapGlow is designed as an everyday carry object, sized to travel with you.</p>",
-            "page": ""
-          }
-        },
-        "q4": {
           "type": "collapsible_row",
           "settings": {
             "heading": "When will it ship?",
@@ -256,7 +205,7 @@
             "page": ""
           }
         },
-        "q5": {
+        "q4": {
           "type": "collapsible_row",
           "settings": {
             "heading": "What is the return policy?",
@@ -266,7 +215,7 @@
           }
         }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5"],
+      "block_order": ["q1", "q2", "q3", "q4"],
       "settings": {
         "caption": "FAQ",
         "heading": "Frequently asked questions",
@@ -274,12 +223,12 @@
         "heading_alignment": "center",
         "layout": "none",
         "container_color_scheme": "scheme-3",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 72,
-        "padding_bottom": 80
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "final_cta": {
@@ -288,14 +237,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Focus, one click at a time.",
+            "heading": "Ready for your next click?",
             "heading_size": "hxl"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Buy Now",
+            "button_label": "Get TapGlow",
             "button_link": "/products/tapglow-clicker",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -310,18 +259,10 @@
         "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
-        "padding_top": 96,
-        "padding_bottom": 104
+        "padding_top": 72,
+        "padding_bottom": 80
       }
     }
   },
-  "order": [
-    "hero",
-    "how_it_works",
-    "feature_story",
-    "product_showcase",
-    "comparison",
-    "faq",
-    "final_cta"
-  ]
+  "order": ["hero", "benefits", "product_showcase", "editorial", "faq", "final_cta"]
 }
