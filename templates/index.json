@@ -23,90 +23,13 @@
         "primary_button_label": "Buy Now",
         "primary_button_link": "/products/tapglow-clicker",
         "secondary_button_label": "See It in Action",
-        "secondary_button_link": "#shopify-section-product_showcase",
+        "secondary_button_link": "#shopify-section-editorial",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "center",
         "color_scheme": "scheme-4",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "product_showcase": {
-      "type": "featured-product",
-      "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h0",
-            "title_override": "TapGlow™ RGB Clicker"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "trust": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_1": "lock",
-            "heading_1": "Secure checkout",
-            "icon_2": "truck",
-            "heading_2": "Shipping calculated at checkout",
-            "icon_3": "chat_bubble",
-            "heading_3": "Questions? Check our FAQ"
-          }
-        }
-      },
-      "block_order": [
-        "vendor",
-        "title",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "trust"
-      ],
-      "settings": {
-        "product": "tapglow-clicker",
-        "color_scheme": "scheme-5",
-        "secondary_background": false,
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_full_gallery": false,
-        "enable_video_looping": false,
-        "padding_top": 48,
-        "padding_bottom": 48
       }
     },
     "benefits": {
@@ -142,7 +65,7 @@
       },
       "block_order": ["b1", "b2", "b3"],
       "settings": {
-        "title": "",
+        "title": "Why you'll love TapGlow",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -295,5 +218,5 @@
       }
     }
   },
-  "order": ["hero", "product_showcase", "benefits", "editorial", "faq", "final_cta"]
+  "order": ["hero", "benefits", "editorial", "faq", "final_cta"]
 }

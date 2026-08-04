@@ -182,12 +182,7 @@
     assign header_tag = 'sticky-header'
   endif
 
-  assign buy_now_anchor = '#shopify-section-product_showcase'
-  if request.page_type == 'index'
-    assign buy_now_url = buy_now_anchor
-  else
-    assign buy_now_url = routes.root_url | append: buy_now_anchor
-  endif
+  assign buy_now_url = '/products/tapglow-clicker'
 %}
 
 <{{ header_tag }}
