@@ -42,34 +42,8 @@
     }
   }
 
-  .header__buy-now {
-    padding: 0.8rem 2rem;
-    font-size: 1.3rem;
-    font-weight: 700;
-    white-space: nowrap;
-    background-color: #b5762e;
-    color: #111315;
-    border-color: #b5762e;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-  }
-
-  .header__buy-now:hover {
-    opacity: 0.85;
-    background-color: #b5762e;
-    color: #111315;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .header__buy-now:hover {
-      transform: translateY(-1px);
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .header__buy-now {
-      padding: 0.7rem 1.4rem;
-      font-size: 1.2rem;
-    }
+  .header__heading-link .h2 {
+    font-size: 1.25em;
   }
 
   {%- if section.settings.transparent_on_home -%}
@@ -181,8 +155,6 @@
   if section.settings.sticky_header_type != 'none'
     assign header_tag = 'sticky-header'
   endif
-
-  assign buy_now_url = '/products/tapglow-clicker'
 %}
 
 <{{ header_tag }}
@@ -359,10 +331,6 @@
             {% render block %}
         {%- endcase -%}
       {%- endfor -%}
-
-      <a href="{{ buy_now_url }}" class="header__buy-now button button--primary">
-        Buy Now
-      </a>
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {% if cart == empty %}

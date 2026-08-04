@@ -160,9 +160,18 @@
     padding: 0;
   }
 
-  .hero__content-top,
-  .hero__content-bottom {
+  .hero__content-top {
     display: contents;
+  }
+
+  .hero__content-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: auto;
+    gap: 3.6rem;
+    margin-left: 50px;
   }
 
   .hero__overlay {
