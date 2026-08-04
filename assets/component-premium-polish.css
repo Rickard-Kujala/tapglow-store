@@ -22,3 +22,35 @@
   font-weight: 700;
   letter-spacing: 0.01em;
 }
+
+/* Product page: consistent vertical rhythm between info blocks */
+body.template-product .product__info-container > * + * {
+  margin-top: 1.8rem;
+}
+
+/* Product page: Add to Cart reads as the dominant action; Shop Pay stays secondary */
+body.template-product .product-form .button--primary {
+  background-color: #b5762e;
+  color: #111315;
+  border-color: #b5762e;
+  font-weight: 700;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+}
+
+body.template-product .shopify-payment-button {
+  margin-top: 1rem;
+  --shopify-payment-button-color-scheme: dark;
+}
+
+/* Trust/benefit icon rows: Dawn's stock component has no mobile stacking */
+@media screen and (max-width: 749px) {
+  .icon-with-text--horizontal {
+    flex-direction: column;
+    row-gap: 1.8rem;
+  }
+
+  .icon-with-text--horizontal .icon-with-text__item {
+    width: 100%;
+  }
+}
