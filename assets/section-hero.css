@@ -114,7 +114,7 @@
   max-width: 62rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.4rem;
 }
 
 .hero__content--align-left {
@@ -150,9 +150,9 @@
 
 .hero__text {
   margin: 0;
-  max-width: 46rem;
+  max-width: 44rem;
   font-size: 1.7rem;
-  line-height: 1.5;
+  line-height: 1.6;
   opacity: 0.85;
 }
 

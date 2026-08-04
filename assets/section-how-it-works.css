@@ -1,6 +1,6 @@
 .how-it-works__header {
   max-width: 46rem;
-  margin: 0 auto 4rem;
+  margin: 0 auto 5.2rem;
   text-align: center;
 }
 
@@ -27,13 +27,13 @@
 @media screen and (min-width: 750px) {
   .how-it-works__grid {
     grid-template-columns: repeat(var(--how-it-works-columns, 3), 1fr);
-    gap: 4rem;
+    gap: 4.8rem;
   }
 }
 
 .how-it-works__step {
   position: relative;
-  padding-top: 2.4rem;
+  padding-top: 2.8rem;
   border-top: 1px solid rgba(24, 20, 15, 0.14);
 }
 

@@ -67,8 +67,8 @@
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 52,
-        "padding_bottom": 40
+        "padding_top": 60,
+        "padding_bottom": 52
       }
     },
     "product_story": {
@@ -99,6 +99,8 @@
       },
       "block_order": ["caption", "heading", "text"],
       "settings": {
+        "product": "tapglow-clicker",
+        "product_image_index": 1,
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -109,8 +111,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2",
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "how_it_works": {
@@ -144,8 +146,8 @@
         "heading": "Three steps. One ritual.",
         "heading_size": "h1",
         "color_scheme": "scheme-1",
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "feature_story_1": {
@@ -176,6 +178,8 @@
       },
       "block_order": ["caption", "heading", "text"],
       "settings": {
+        "product": "tapglow-clicker",
+        "product_image_index": 2,
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -186,8 +190,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-1",
-        "padding_top": 48,
-        "padding_bottom": 48
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "feature_story_2": {
@@ -218,6 +222,8 @@
       },
       "block_order": ["caption", "heading", "text"],
       "settings": {
+        "product": "tapglow-clicker",
+        "product_image_index": 3,
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -228,8 +234,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2",
-        "padding_top": 48,
-        "padding_bottom": 48
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "feature_story_3": {
@@ -260,6 +266,8 @@
       },
       "block_order": ["caption", "heading", "text"],
       "settings": {
+        "product": "tapglow-clicker",
+        "product_image_index": 4,
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -270,8 +278,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-1",
-        "padding_top": 48,
-        "padding_bottom": 48
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "feature_story_4": {
@@ -302,6 +310,8 @@
       },
       "block_order": ["caption", "heading", "text"],
       "settings": {
+        "product": "tapglow-clicker",
+        "product_image_index": 5,
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -312,8 +322,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2",
-        "padding_top": 48,
-        "padding_bottom": 52
+        "padding_top": 60,
+        "padding_bottom": 64
       }
     },
     "product_showcase": {
@@ -380,8 +390,8 @@
         "hide_variants": false,
         "enable_full_gallery": true,
         "enable_video_looping": false,
-        "padding_top": 56,
-        "padding_bottom": 56
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "social_proof": {
@@ -391,8 +401,8 @@
         "heading": "What people notice first",
         "heading_size": "h1",
         "color_scheme": "scheme-1",
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "comparison": {
@@ -439,8 +449,8 @@
         "tapglow_label": "TapGlow",
         "ordinary_label": "Ordinary fidget toys",
         "color_scheme": "scheme-2",
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "faq": {
@@ -522,8 +532,8 @@
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 52,
-        "padding_bottom": 60
+        "padding_top": 64,
+        "padding_bottom": 72
       }
     },
     "final_cta": {
@@ -554,8 +564,8 @@
         "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
-        "padding_top": 72,
-        "padding_bottom": 80
+        "padding_top": 88,
+        "padding_bottom": 96
       }
     }
   },

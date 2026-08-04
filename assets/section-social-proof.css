@@ -1,6 +1,6 @@
 .social-proof__header {
   max-width: 46rem;
-  margin: 0 auto 4rem;
+  margin: 0 auto 5.2rem;
   text-align: center;
 }
 
@@ -20,18 +20,18 @@
 .social-proof__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 2.4rem;
 }
 
 @media screen and (min-width: 750px) {
   .social-proof__grid {
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 2.4rem;
+    gap: 2.8rem;
   }
 }
 
 .social-proof__card {
-  padding: 2.8rem;
+  padding: 3.2rem;
   border: 1px solid rgba(24, 20, 15, 0.14);
 }
 
