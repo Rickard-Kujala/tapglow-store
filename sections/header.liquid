@@ -43,19 +43,33 @@
   }
 
   .header__buy-now {
-    padding: 0.7rem 1.8rem;
+    padding: 0.8rem 2rem;
     font-size: 1.3rem;
+    font-weight: 700;
     white-space: nowrap;
     background-color: #b5762e;
     color: #111315;
     border-color: #b5762e;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease;
   }
 
   .header__buy-now:hover {
     opacity: 0.85;
     background-color: #b5762e;
     color: #111315;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .header__buy-now:hover {
+      transform: translateY(-1px);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .header__buy-now {
+      padding: 0.7rem 1.4rem;
+      font-size: 1.2rem;
+    }
   }
 
   {%- if section.settings.transparent_on_home -%}

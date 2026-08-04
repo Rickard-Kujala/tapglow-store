@@ -13,6 +13,7 @@
       "type": "hero",
       "settings": {
         "product": "tapglow-clicker",
+        "product_image_index": 2,
         "image_overlay_opacity": 45,
         "image_height": "full-screen",
         "eyebrow": "TAPGLOW",
@@ -31,59 +32,6 @@
         "padding_bottom": 0
       }
     },
-    "benefits": {
-      "type": "multicolumn",
-      "blocks": {
-        "b1": {
-          "type": "column",
-          "settings": {
-            "title": "Crisp tactile clicks",
-            "text": "<p>Real resistance. Clean release.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "b2": {
-          "type": "column",
-          "settings": {
-            "title": "Lights up with every press",
-            "text": "<p>RGB feedback with every click.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "b3": {
-          "type": "column",
-          "settings": {
-            "title": "Pocket-sized and portable",
-            "text": "<p>Small enough to take anywhere.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 56,
-        "padding_bottom": 48
-      }
-    },
     "product_showcase": {
       "type": "featured-product",
       "blocks": {
@@ -97,7 +45,8 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_size": "h0"
+            "heading_size": "h0",
+            "title_override": "TapGlow™ RGB Clicker"
           }
         },
         "price": {
@@ -156,8 +105,57 @@
         "hide_variants": false,
         "enable_full_gallery": false,
         "enable_video_looping": false,
-        "padding_top": 56,
-        "padding_bottom": 56
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "benefits": {
+      "type": "multicolumn",
+      "blocks": {
+        "b1": {
+          "type": "column",
+          "settings": {
+            "title": "Crisp tactile clicks",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "b2": {
+          "type": "column",
+          "settings": {
+            "title": "Lights up with every press",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "b3": {
+          "type": "column",
+          "settings": {
+            "title": "Pocket-sized and portable",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["b1", "b2", "b3"],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "editorial": {
@@ -173,7 +171,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Four satisfying keys. Instant RGB feedback. A small tactile gadget made for desks, pockets and restless hands.</p>",
+            "text": "<p>Four satisfying keys. Instant RGB feedback.</p>",
             "text_style": "body"
           }
         }
@@ -196,8 +194,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2",
-        "padding_top": 64,
-        "padding_bottom": 64
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "faq": {
@@ -208,7 +206,7 @@
           "settings": {
             "heading": "What is TapGlow?",
             "icon": "none",
-            "row_content": "<p>A pocket-sized RGB clicker with four tactile keys, each with crisp feedback and instant light-up.</p>",
+            "row_content": "<p>A pocket-sized RGB clicker with four tactile, light-up keys.</p>",
             "page": ""
           }
         },
@@ -217,7 +215,7 @@
           "settings": {
             "heading": "Is it noisy?",
             "icon": "none",
-            "row_content": "<p>Each key has a satisfying tactile click. Exact sound levels will be confirmed closer to launch.</p>",
+            "row_content": "<p>Each key has a satisfying click. Exact sound levels will be confirmed soon.</p>",
             "page": ""
           }
         },
@@ -226,7 +224,7 @@
           "settings": {
             "heading": "When will it ship?",
             "icon": "none",
-            "row_content": "<p>TapGlow is available to order now. Shipping options and delivery estimates are shown at checkout.</p>",
+            "row_content": "<p>Available to order now. Shipping shown at checkout.</p>",
             "page": ""
           }
         },
@@ -235,7 +233,7 @@
           "settings": {
             "heading": "What is the return policy?",
             "icon": "none",
-            "row_content": "<p>We're finalizing our return policy and will publish the full details here shortly.</p>",
+            "row_content": "<p>We're finalizing our return policy and will publish it here shortly.</p>",
             "page": ""
           }
         }
@@ -257,8 +255,8 @@
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 64,
-        "padding_bottom": 64
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "final_cta": {
@@ -292,17 +290,10 @@
         "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
-        "padding_top": 72,
-        "padding_bottom": 80
+        "padding_top": 56,
+        "padding_bottom": 64
       }
     }
   },
-  "order": [
-    "hero",
-    "benefits",
-    "product_showcase",
-    "editorial",
-    "faq",
-    "final_cta"
-  ]
+  "order": ["hero", "product_showcase", "benefits", "editorial", "faq", "final_cta"]
 }

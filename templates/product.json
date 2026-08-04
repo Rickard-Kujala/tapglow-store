@@ -21,7 +21,9 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "title_override": "TapGlow™ RGB Clicker"
+          }
         },
         "price": {
           "type": "price",

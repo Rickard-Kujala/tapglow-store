@@ -115,7 +115,7 @@
                 {%- when 'title' -%}
                   <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                     {%- unless placeholder -%}
-                      {{ product.title | escape }}
+                      {{ block.settings.title_override | default: product.title | escape }}
                     {%- else -%}
                       {{ 'onboarding.product_title' | t }}
                     {%- endunless -%}
@@ -410,6 +410,10 @@
                     surface: 'product_page'
                   -%}
                 {%- when 'variant_picker' -%}
+                  {%- comment -%}
+                    See sections/main-product.liquid for a note on removing the
+                    "Random 8/16/24 PCS" and "2 PCS" variants in Shopify Admin.
+                  {%- endcomment -%}
                   {% render 'product-variant-picker',
                     product: product,
                     block: block,
@@ -588,6 +592,12 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "text",
+          "id": "title_override",
+          "label": "Display title override",
+          "info": "Shown instead of the product's actual title. Leave blank to use the real product title."
         }
       ]
     },

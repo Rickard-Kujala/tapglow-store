@@ -86,7 +86,7 @@
   z-index: 2;
   display: flex;
   width: 100%;
-  padding: 6rem 2rem;
+  padding: 4.5rem 2rem;
 }
 
 .hero__content-wrapper--position-top {
@@ -170,7 +170,7 @@
 
 @media screen and (max-width: 749px) {
   .hero__content-wrapper {
-    padding: 4rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
 
   .hero__content--mobile-align-left {

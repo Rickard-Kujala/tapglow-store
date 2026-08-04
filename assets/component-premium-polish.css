@@ -1,0 +1,24 @@
+.product__title h1,
+.product__title h2.h1 {
+  text-wrap: balance;
+  max-width: 30ch;
+}
+
+.button--primary {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .button--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.color-scheme-4 .hero__ctas .button--primary,
+.color-scheme-5 .product-form .button--primary {
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}

@@ -18,6 +18,17 @@
   }
 {%- endstyle -%}
 
+{%- liquid
+  assign hero_product_image = section.settings.product.featured_image
+  if section.settings.product != blank and section.settings.product_image_index > 1
+    assign fallback_index = section.settings.product_image_index | minus: 1
+    assign indexed_image = section.settings.product.images[fallback_index]
+    if indexed_image != blank
+      assign hero_product_image = indexed_image
+    endif
+  endif
+-%}
+
 <div
   id="Hero-{{ section.id }}"
   class="hero hero--{{ section.settings.image_height }} color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding"
@@ -84,16 +95,16 @@
         }}
       {%- endif -%}
     </div>
-  {%- elsif section.settings.product.featured_image != blank -%}
+  {%- elsif hero_product_image != blank -%}
     <div class="hero__media">
       {{
-        section.settings.product.featured_image
+        hero_product_image
         | image_url: width: 3200
         | image_tag:
           sizes: '100vw',
           widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3200',
           loading: 'eager',
-          alt: section.settings.product.featured_image.alt
+          alt: hero_product_image.alt
       }}
     </div>
   {%- else -%}
@@ -163,6 +174,16 @@
       "id": "product",
       "label": "Product",
       "info": "Used as a fallback image when no image or video is selected above."
+    },
+    {
+      "type": "range",
+      "id": "product_image_index",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 1,
+      "label": "Fallback image position",
+      "info": "Which product image to use as the fallback (1 = featured image)."
     },
     {
       "type": "image_picker",

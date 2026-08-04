@@ -98,11 +98,12 @@
                     {{- block.settings.text -}}
                   </p>
                 {%- when 'title' -%}
+                  {%- assign display_title = block.settings.title_override | default: product.title -%}
                   <div class="product__title" {{ block.shopify_attributes }}>
-                    <h1>{{ product.title | escape }}</h1>
+                    <h1>{{ display_title | escape }}</h1>
                     <a href="{{ product.url }}" class="product__title">
                       <h2 class="h1">
-                        {{ product.title | escape }}
+                        {{ display_title | escape }}
                       </h2>
                     </a>
                   </div>
@@ -486,6 +487,14 @@
                     surface: 'product_page'
                   -%}
                 {%- when 'variant_picker' -%}
+                  {%- comment -%}
+                    This picker renders every variant defined on the product in Shopify Admin.
+                    To show only "Transparent Black" / "Transparent White" and hide the
+                    "Random 8/16/24 PCS" and "2 PCS" variants, delete those variants (and,
+                    if they form their own option like "Quantity", that option) from
+                    Shopify Admin > Products > TapGlow > Variants. This cannot be filtered
+                    from the theme without risking checkout/inventory mismatches.
+                  {%- endcomment -%}
                   {% render 'product-variant-picker',
                     product: product,
                     block: block,
@@ -820,7 +829,15 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title_override",
+          "label": "Display title override",
+          "info": "Shown instead of the product's actual title. Leave blank to use the real product title."
+        }
+      ]
     },
     {
       "type": "price",
