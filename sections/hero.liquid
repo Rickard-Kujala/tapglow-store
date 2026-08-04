@@ -1,6 +1,10 @@
 {{ 'section-hero.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  #Hero-{{ section.id }} .hero__overlay {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -11,10 +15,6 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  }
-
-  #Hero-{{ section.id }} .hero__media-overlay {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 {%- endstyle -%}
 
@@ -33,132 +33,129 @@
   id="Hero-{{ section.id }}"
   class="hero hero--{{ section.settings.image_height }} color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding"
 >
-  <div class="hero__grid">
-    <div class="hero__text-col hero__text-col--position-{{ section.settings.desktop_content_position }}">
-      <div
-        class="hero__content hero__content--align-{{ section.settings.desktop_content_alignment }} hero__content--mobile-align-{{ section.settings.mobile_content_alignment }}"
-      >
-        {%- if section.settings.eyebrow != blank -%}
-          <p class="hero__eyebrow caption-with-letter-spacing">{{ section.settings.eyebrow | escape }}</p>
-        {%- endif -%}
-        {%- if section.settings.heading != blank -%}
-          <h1 class="hero__heading inline-richtext {{ section.settings.heading_size }}">
-            {{ section.settings.heading }}
-          </h1>
-        {%- endif -%}
-        {%- if section.settings.text != blank -%}
-          <div class="hero__text rte">{{ section.settings.text }}</div>
-        {%- endif -%}
-        {%- if section.settings.primary_button_label != blank or section.settings.secondary_button_label != blank -%}
-          <div class="hero__ctas hero__ctas--align-{{ section.settings.desktop_content_alignment }}">
-            {%- if section.settings.primary_button_label != blank -%}
-              <a
-                {% if section.settings.primary_button_link == blank %}
-                  role="link" aria-disabled="true"
-                {% else %}
-                  href="{{ section.settings.primary_button_link }}"
-                {% endif %}
-                class="button button--primary"
-              >
-                {{- section.settings.primary_button_label | escape -}}
-              </a>
-            {%- endif -%}
-            {%- if section.settings.secondary_button_label != blank -%}
-              <a
-                {% if section.settings.secondary_button_link == blank %}
-                  role="link" aria-disabled="true"
-                {% else %}
-                  href="{{ section.settings.secondary_button_link }}"
-                {% endif %}
-                class="link underlined-link button--secondary-link"
-              >
-                {{- section.settings.secondary_button_label | escape -}}
-              </a>
-            {%- endif -%}
-          </div>
-        {%- endif -%}
-      </div>
-    </div>
-
-    <div class="hero__media-col">
-      {%- if section.settings.video != blank -%}
-        <div class="hero__media">
-          <deferred-media class="hero__media-video" data-media-id="{{ section.settings.video.id }}">
-            <button
-              class="deferred-media__poster"
-              type="button"
-              aria-label="{{ 'sections.video.load_video' | t: description: section.settings.heading | escape }}"
-            >
-              {%- if section.settings.image != blank -%}
-                {{
-                  section.settings.image
-                  | image_url: width: 3200
-                  | image_tag: sizes: '(min-width: 750px) 60vw, 100vw', widths: '750, 1100, 1500, 1780, 2000, 3000, 3200', loading: 'eager'
-                }}
-              {%- else -%}
-                {{
-                  section.settings.video.preview_image
-                  | image_url: width: 3200
-                  | image_tag: sizes: '(min-width: 750px) 60vw, 100vw', widths: '750, 1100, 1500, 1780, 2000, 3000, 3200', loading: 'eager'
-                }}
-              {%- endif -%}
-              <span class="deferred-media__poster-button motion-reduce">
-                <span class="svg-wrapper">{{- 'icon-play.svg' | inline_asset_content -}}</span>
-              </span>
-            </button>
-            <template>
-              {{
-                section.settings.video
-                | video_tag: image_size: '1100x', autoplay: true, loop: true, controls: false, muted: true
-              }}
-            </template>
-          </deferred-media>
-        </div>
-      {%- elsif section.settings.image != blank -%}
-        <div class="hero__media">
-          {%- if section.settings.mobile_image != blank -%}
-            {{
-              section.settings.mobile_image
-              | image_url: width: 1500
-              | image_tag:
-                class: 'hero__media-image--mobile-only',
-                sizes: '100vw',
-                widths: '375, 550, 750, 1100, 1500',
-                loading: 'eager'
-            }}
+  {%- if section.settings.video != blank -%}
+    <div class="hero__media">
+      <deferred-media class="hero__media-video" data-media-id="{{ section.settings.video.id }}">
+        <button
+          class="deferred-media__poster"
+          type="button"
+          aria-label="{{ 'sections.video.load_video' | t: description: section.settings.heading | escape }}"
+        >
+          {%- if section.settings.image != blank -%}
             {{
               section.settings.image
               | image_url: width: 3200
-              | image_tag:
-                class: 'hero__media-image--desktop-only',
-                sizes: '60vw',
-                widths: '750, 1100, 1500, 1780, 2000, 3000, 3200',
-                loading: 'eager'
+              | image_tag: sizes: '100vw', widths: '750, 1100, 1500, 1780, 2000, 3000, 3200', loading: 'eager'
             }}
           {%- else -%}
             {{
-              section.settings.image
+              section.settings.video.preview_image
               | image_url: width: 3200
-              | image_tag: sizes: '(min-width: 750px) 60vw, 100vw', widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3200', loading: 'eager'
+              | image_tag: sizes: '100vw', widths: '750, 1100, 1500, 1780, 2000, 3000, 3200', loading: 'eager'
             }}
           {%- endif -%}
-        </div>
-      {%- elsif hero_product_image != blank -%}
-        <div class="hero__media">
+          <span class="deferred-media__poster-button motion-reduce">
+            <span class="svg-wrapper">{{- 'icon-play.svg' | inline_asset_content -}}</span>
+          </span>
+        </button>
+        <template>
           {{
-            hero_product_image
-            | image_url: width: 3200
-            | image_tag:
-              sizes: '(min-width: 750px) 60vw, 100vw',
-              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3200',
-              loading: 'eager',
-              alt: hero_product_image.alt
+            section.settings.video
+            | video_tag: image_size: '1100x', autoplay: true, loop: true, controls: false, muted: true
           }}
-        </div>
+        </template>
+      </deferred-media>
+    </div>
+  {%- elsif section.settings.image != blank -%}
+    <div class="hero__media">
+      {%- if section.settings.mobile_image != blank -%}
+        {{
+          section.settings.mobile_image
+          | image_url: width: 1500
+          | image_tag:
+            class: 'hero__media-image--mobile-only',
+            sizes: '100vw',
+            widths: '375, 550, 750, 1100, 1500',
+            loading: 'eager'
+        }}
+        {{
+          section.settings.image
+          | image_url: width: 3200
+          | image_tag:
+            class: 'hero__media-image--desktop-only',
+            sizes: '100vw',
+            widths: '750, 1100, 1500, 1780, 2000, 3000, 3200',
+            loading: 'eager'
+        }}
       {%- else -%}
-        <div class="hero__placeholder" role="img" aria-label="TapGlow"></div>
+        {{
+          section.settings.image
+          | image_url: width: 3200
+          | image_tag: sizes: '100vw', widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3200', loading: 'eager'
+        }}
       {%- endif -%}
-      <div class="hero__media-overlay" aria-hidden="true"></div>
+    </div>
+  {%- elsif hero_product_image != blank -%}
+    <div class="hero__media">
+      {{
+        hero_product_image
+        | image_url: width: 3200
+        | image_tag:
+          sizes: '100vw',
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3200',
+          loading: 'eager',
+          alt: hero_product_image.alt
+      }}
+    </div>
+  {%- else -%}
+    <div class="hero__placeholder" role="img" aria-label="TapGlow"></div>
+  {%- endif -%}
+
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="hero__content-wrapper hero__content-wrapper--position-{{ section.settings.desktop_content_position }} page-width">
+    <div
+      class="hero__content hero__content--align-{{ section.settings.desktop_content_alignment }} hero__content--mobile-align-{{ section.settings.mobile_content_alignment }}"
+    >
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="hero__eyebrow caption-with-letter-spacing">{{ section.settings.eyebrow | escape }}</p>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <h1 class="hero__heading inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h1>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="hero__text rte">{{ section.settings.text }}</div>
+      {%- endif -%}
+      {%- if section.settings.primary_button_label != blank or section.settings.secondary_button_label != blank -%}
+        <div class="hero__ctas hero__ctas--align-{{ section.settings.desktop_content_alignment }}">
+          {%- if section.settings.primary_button_label != blank -%}
+            <a
+              {% if section.settings.primary_button_link == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.primary_button_link }}"
+              {% endif %}
+              class="button button--primary"
+            >
+              {{- section.settings.primary_button_label | escape -}}
+            </a>
+          {%- endif -%}
+          {%- if section.settings.secondary_button_label != blank -%}
+            <a
+              {% if section.settings.secondary_button_link == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.secondary_button_link }}"
+              {% endif %}
+              class="link underlined-link button--secondary-link"
+            >
+              {{- section.settings.secondary_button_label | escape -}}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -212,9 +209,8 @@
       "max": 80,
       "step": 5,
       "unit": "%",
-      "label": "Image dimming",
-      "default": 30,
-      "info": "Subtle darkening applied to the product image only, not the text column."
+      "label": "Overlay strength",
+      "default": 30
     },
     {
       "type": "select",
@@ -226,8 +222,7 @@
         { "value": "full-screen", "label": "Full screen" }
       ],
       "default": "large",
-      "label": "Section height",
-      "info": "Applies on desktop. Mobile height is determined by content."
+      "label": "Section height"
     },
     {
       "type": "header",
@@ -242,7 +237,7 @@
     {
       "type": "inline_richtext",
       "id": "heading",
-      "default": "Satisfying clicks.<br>Instant glow.",
+      "default": "Satisfying clicks. Instant glow.",
       "label": "Heading"
     },
     {
@@ -306,7 +301,7 @@
         { "value": "bottom", "label": "Bottom" }
       ],
       "default": "middle",
-      "label": "Desktop text vertical position"
+      "label": "Desktop content position"
     },
     {
       "type": "select",
@@ -317,7 +312,7 @@
         { "value": "right", "label": "Right" }
       ],
       "default": "left",
-      "label": "Desktop text alignment"
+      "label": "Desktop content alignment"
     },
     {
       "type": "select",
