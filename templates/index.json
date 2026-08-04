@@ -81,6 +81,58 @@
         "padding_bottom": 40
       }
     },
+    "showcase": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "TAPGLOW",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choose your style.",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Available in Transparent Black and Transparent White.</p><p>The same satisfying mechanical click and vibrant RGB glow&mdash;just pick the look that matches your style.</p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Product",
+            "button_link": "/products/tapglow-clicker",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": ["caption", "heading", "text", "button"],
+      "settings": {
+        "product": "tapglow-clicker",
+        "product_image_index": 4,
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
     "editorial": {
       "type": "image-with-text",
       "blocks": {
@@ -218,5 +270,5 @@
       }
     }
   },
-  "order": ["hero", "benefits", "editorial", "faq", "final_cta"]
+  "order": ["hero", "benefits", "showcase", "editorial", "faq", "final_cta"]
 }
