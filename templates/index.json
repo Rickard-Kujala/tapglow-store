@@ -14,6 +14,7 @@
       "settings": {
         "product": "tapglow-clicker",
         "product_image_index": 2,
+        "image": "shopify://shop_images/ChatGPT_Image_4_aug._2026_17_27_13.png",
         "image_overlay_opacity": 45,
         "image_height": "full-screen",
         "eyebrow": "TAPGLOW",
