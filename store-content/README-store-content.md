@@ -45,23 +45,27 @@ The content for these two pages is already built into the theme (`templates/page
 
 If a "Contact Us" page already exists from Shopify's default setup, edit that existing page instead of creating a new one — just change its **Theme template** to `page.contact` (or `page.faq`) rather than creating a duplicate.
 
-## Step 3 — Add Contact and FAQ to the footer menu
+## Step 3 — Build the "Help Center" menu
 
-The footer already has a "Support" quick-links block wired up (added via the theme), pointing at your store's **Footer** navigation menu. You just need to make sure that menu has links to the two pages:
+The footer has a "Help Center" quick-links block wired up (added via the theme), pointing at a **dedicated** navigation menu with the handle `help-center` — deliberately separate from Shopify's general-purpose "Footer menu" (which often carries default clutter like a "Search" link) so this one stays clean with exactly the 4 links below, in this order:
 
 1. Go to **Online Store → Navigation**.
-2. Open the menu named **Footer menu** (handle `footer`). If it doesn't exist yet, click **Add menu**, name it `Footer menu`, and Shopify will assign it the handle `footer` automatically.
-3. Click **Add menu item**.
-   - Name: `Contact` → Link: search for and select the Contact page you created in Step 2.
-   - Add another item, Name: `FAQ` → Link: select the FAQ page.
-4. Save.
+2. Click **Add menu**.
+   - Title: `Help Center` — Shopify will auto-assign the handle `help-center`. If it picks a different handle, open the menu and check/edit the handle field so it's exactly `help-center` (this must match what the theme block looks for).
+3. Add exactly these 4 menu items, in this order:
+   1. Name: `FAQ` → Link: select the FAQ page (created in Step 2).
+   2. Name: `Contact Us` → Link: select the Contact page (created in Step 2).
+   3. Name: `Shipping Policy` → Link: under "Policies" in the link picker, select Shipping policy.
+   4. Name: `Return & Refund Policy` → Link: under "Policies", select Refund policy.
+4. Do **not** add Privacy Policy or Terms of Service here — those already appear automatically in the footer's separate policy-links row (from Step 1), so adding them here would just duplicate them.
+5. Save.
 
-Once saved, "Contact" and "FAQ" will appear under the "Support" heading in your footer, alongside the auto-generated policy links from Step 1.
+Once saved, these 4 links will appear under the "Help Center" heading in your footer. If you'd previously added Contact/FAQ links to the default "Footer menu" per an earlier version of these instructions, you can leave that menu alone (it's no longer referenced by this block) or clean it up — your call.
 
 ## Where things already stand
 
 - ✅ Theme templates for Contact and FAQ — done, in git, no action needed beyond Step 2 above.
-- ✅ Footer wired to show policy links and a Support quick-links block — done, in git.
+- ✅ Footer wired to show policy links and a Help Center quick-links block — done, in git.
 - ⬜ Pasting the 4 policy texts into Admin — your action (Step 1).
 - ⬜ Creating/assigning the Contact and FAQ Page records — your action (Step 2).
-- ⬜ Adding Contact/FAQ to the Footer navigation menu — your action (Step 3).
+- ⬜ Building the dedicated Help Center navigation menu — your action (Step 3).
