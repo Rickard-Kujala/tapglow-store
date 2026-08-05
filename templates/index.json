@@ -63,7 +63,11 @@
           }
         }
       },
-      "block_order": ["b1", "b2", "b3"],
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ],
       "settings": {
         "title": "Why you'll love TapGlow",
         "heading_size": "h1",
@@ -115,8 +119,14 @@
           }
         }
       },
-      "block_order": ["caption", "heading", "text", "button"],
+      "block_order": [
+        "caption",
+        "heading",
+        "text",
+        "button"
+      ],
       "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_4_aug._2026_17_32_17.png",
         "product": "tapglow-clicker",
         "product_image_index": 4,
         "height": "adapt",
@@ -270,5 +280,12 @@
       }
     }
   },
-  "order": ["hero", "benefits", "showcase", "editorial", "faq", "final_cta"]
+  "order": [
+    "hero",
+    "benefits",
+    "showcase",
+    "editorial",
+    "faq",
+    "final_cta"
+  ]
 }
