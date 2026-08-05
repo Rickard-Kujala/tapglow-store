@@ -37,7 +37,7 @@
   height: 100%;
   object-fit: cover;
   object-position: 62% 50%;
-  transform: scale(0.75);
+  transform: scale(0.85);
 }
 
 .hero__media-image--mobile-only {
@@ -125,7 +125,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 5.25rem 1.75rem 2.75rem;
+  padding: 4.5rem 1.75rem 2.75rem;
 }
 
 .hero__content-top,
