@@ -8,11 +8,20 @@
           "settings": {
             "heading": "How long does shipping take?",
             "icon": "none",
-            "row_content": "<p>Orders are processed within 1&ndash;3 business days. Delivery time after that depends on your destination. You'll see an estimated delivery window at checkout, and full tracking details once your order ships.</p>",
+            "row_content": "<p>Orders are processed within 1&ndash;3 business days. Processing times may be slightly longer during high-demand periods.</p>",
             "page": ""
           }
         },
         "q2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will my order arrive?",
+            "icon": "none",
+            "row_content": "<p>Total delivery time depends on your destination, since orders are shipped internationally through our fulfillment partner. You'll see an estimated delivery window at checkout, and we'll email you tracking details the moment your order ships so you can follow its progress.</p>",
+            "page": ""
+          }
+        },
+        "q3": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Where do you ship?",
@@ -21,16 +30,16 @@
             "page": ""
           }
         },
-        "q3": {
+        "q4": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Can I track my order?",
             "icon": "none",
-            "row_content": "<p>Yes. As soon as your order ships, we'll email you tracking information so you can follow it the whole way.</p>",
+            "row_content": "<p>Yes. As soon as your order ships, we'll email you tracking information so you can follow it the whole way to your door.</p>",
             "page": ""
           }
         },
-        "q4": {
+        "q5": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Can I return my order?",
@@ -39,34 +48,16 @@
             "page": ""
           }
         },
-        "q5": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What payment methods do you accept?",
-            "icon": "none",
-            "row_content": "<p>We accept Visa, Mastercard, PayPal, and Google Pay, all processed securely through Shopify Payments.</p>",
-            "page": ""
-          }
-        },
         "q6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do I need to pay customs fees?",
-            "icon": "none",
-            "row_content": "<p>Depending on your country, customs duties or import taxes may apply. These are set by your local authorities and are the customer's responsibility, not included in your order total.</p>",
-            "page": ""
-          }
-        },
-        "q7": {
           "type": "collapsible_row",
           "settings": {
             "heading": "My order arrived damaged.",
             "icon": "none",
-            "row_content": "<p>We're sorry to hear that. Email us at support@tapglow.se with your order number and a photo of the damage, and we'll sort out a replacement or refund.</p>",
+            "row_content": "<p>We're sorry to hear that. Email us at support@tapglow.se with your order number and a photo of the damage, and we'll arrange a replacement or refund at no additional cost to you.</p>",
             "page": ""
           }
         },
-        "q8": {
+        "q7": {
           "type": "collapsible_row",
           "settings": {
             "heading": "I entered the wrong shipping address.",
@@ -75,7 +66,61 @@
             "page": ""
           }
         },
+        "q8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What payment methods do you accept?",
+            "icon": "none",
+            "row_content": "<p>We accept Visa, Mastercard, PayPal, and Google Pay, all processed securely through Shopify Payments.</p>",
+            "page": ""
+          }
+        },
         "q9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need to pay customs fees?",
+            "icon": "none",
+            "row_content": "<p>Depending on your country, customs duties or import taxes may apply. These are set by your local authorities and are the customer's responsibility, not included in your order total.</p>",
+            "page": ""
+          }
+        },
+        "q10": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What colors does TapGlow come in?",
+            "icon": "none",
+            "row_content": "<p>TapGlow is available in Transparent Black and Transparent White. Both share the same satisfying mechanical click and vibrant RGB glow &mdash; just pick the look that matches your style.</p>",
+            "page": ""
+          }
+        },
+        "q11": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does TapGlow need batteries?",
+            "icon": "none",
+            "row_content": "<p>No disposable batteries required. TapGlow uses a small built-in rechargeable battery that powers the RGB lighting in each switch, and charges via USB-C. It's designed to comfortably power you through extended everyday clicking between charges.</p>",
+            "page": ""
+          }
+        },
+        "q12": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How durable is TapGlow?",
+            "icon": "none",
+            "row_content": "<p>Each key uses genuine mechanical switch mechanisms housed in a durable, scratch-resistant casing, built to handle years of everyday clicking. The reinforced keyring attachment is made for daily carry &mdash; on your keys, your bag, or your desk.</p>",
+            "page": ""
+          }
+        },
+        "q13": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is TapGlow covered by a warranty?",
+            "icon": "none",
+            "row_content": "<p>Yes. TapGlow is covered by a 12-month limited warranty against manufacturing defects. If something isn't working as it should, email us at support@tapglow.se with your order number and a description of the issue, and we'll make it right.</p>",
+            "page": ""
+          }
+        },
+        "q14": {
           "type": "collapsible_row",
           "settings": {
             "heading": "How do I contact TapGlow?",
@@ -85,7 +130,7 @@
           }
         }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9"],
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10", "q11", "q12", "q13", "q14"],
       "settings": {
         "caption": "FAQ",
         "heading": "Frequently asked questions",
