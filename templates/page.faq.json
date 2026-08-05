@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "q1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does shipping take?",
+            "icon": "none",
+            "row_content": "<p>Orders are processed within 1&ndash;3 business days. Delivery time after that depends on your destination. You'll see an estimated delivery window at checkout, and full tracking details once your order ships.</p>",
+            "page": ""
+          }
+        },
+        "q2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where do you ship?",
+            "icon": "none",
+            "row_content": "<p>We ship worldwide.</p>",
+            "page": ""
+          }
+        },
+        "q3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I track my order?",
+            "icon": "none",
+            "row_content": "<p>Yes. As soon as your order ships, we'll email you tracking information so you can follow it the whole way.</p>",
+            "page": ""
+          }
+        },
+        "q4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I return my order?",
+            "icon": "none",
+            "row_content": "<p>Yes. You can request a return within 14 days of delivery, as long as the product is unused and in its original condition. See our Return &amp; Refund Policy for full details.</p>",
+            "page": ""
+          }
+        },
+        "q5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What payment methods do you accept?",
+            "icon": "none",
+            "row_content": "<p>We accept Visa, Mastercard, PayPal, and Google Pay, all processed securely through Shopify Payments.</p>",
+            "page": ""
+          }
+        },
+        "q6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need to pay customs fees?",
+            "icon": "none",
+            "row_content": "<p>Depending on your country, customs duties or import taxes may apply. These are set by your local authorities and are the customer's responsibility, not included in your order total.</p>",
+            "page": ""
+          }
+        },
+        "q7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "My order arrived damaged.",
+            "icon": "none",
+            "row_content": "<p>We're sorry to hear that. Email us at support@tapglow.se with your order number and a photo of the damage, and we'll sort out a replacement or refund.</p>",
+            "page": ""
+          }
+        },
+        "q8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I entered the wrong shipping address.",
+            "icon": "none",
+            "row_content": "<p>Contact us at support@tapglow.se as soon as possible. If your order hasn't shipped yet, we'll do our best to update it &mdash; once it's with our fulfillment partner, we may not be able to change the address.</p>",
+            "page": ""
+          }
+        },
+        "q9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I contact TapGlow?",
+            "icon": "none",
+            "row_content": "<p>Email us at support@tapglow.se and we'll get back to you, usually within 24&ndash;48 business hours.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9"],
+      "settings": {
+        "caption": "FAQ",
+        "heading": "Frequently asked questions",
+        "heading_size": "h0",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 48,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": ["faq"]
+}

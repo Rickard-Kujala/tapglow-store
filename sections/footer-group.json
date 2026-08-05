@@ -13,6 +13,16 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "quick_links": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": ["quick_links"],
       "settings": {
         "color_scheme": "scheme-4",
         "newsletter_enable": true,
