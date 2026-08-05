@@ -17,8 +17,8 @@
         "quick_links": {
           "type": "link_list",
           "settings": {
-            "heading": "Support",
-            "menu": "footer"
+            "heading": "Help Center",
+            "menu": "help-center"
           }
         }
       },
