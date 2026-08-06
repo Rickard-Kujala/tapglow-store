@@ -138,7 +138,11 @@
 
 @media screen and (max-width: 749px) {
   .footer-block.footer-block--menu:only-child {
-    text-align: left;
+    text-align: center;
+  }
+
+  .footer-block.footer-block--menu:only-child .list-menu__item {
+    justify-content: center;
   }
 }
 
